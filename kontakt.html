@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Bilder/scooplogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="menubar">
+        <a href="index.html"><img src="./Bilder/scooplogo.jpg" width="75px" height="75px"
+                alt="Logon för resturangen"></a>
+        <div id="button">
+            <nav>
+                <a href="index.html">Hem</a>
+                <a href="meny.html">Meny</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="om.html">Om Scoop</a>
+                <div class="ani start-kontakt"></div>
+            </nav>
+        </div>
+    </div>
+    <section class="medelande">
+        <div class="form-container">
+            <div class="line"></div>
+            <h1 id="oss">Kontakta Oss</h1>
+            <form action="#" method="POST">
+                <div class="name-fields">
+                    <div class="input">
+                        <input type="text" required spellcheck="false" name="fornamn">
+                        <label for="fornamn">Förnamn</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" required spellcheck="false" name="efternamn">
+                        <label for="efternamn">Efternamn</label>
+                    </div>
+                </div>
+
+                <div class="name-fields">
+                    <div class="input">
+                        <input type="text" required spellcheck="false" name="telefon">
+                        <label for="telefon">Telefonnummer</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" required spellcheck="false" name="ämne">
+                        <label for="ämne">Ämne</label>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <input type="email" required spellcheck="false" name="email" id="post">
+                    <label for="email">E-postadress</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" required spellcheck="false" name="meddelande" id="mmm">
+                    <label for="meddelande">Skriv in ditt meddelande</label>
+                </div>
+
+                <button id="skicka" type="submit">Skicka</button>
+        </div>
+    </section>
+    <section id="sista">
+        <div class="socialaicon">
+            <a href="https://www.facebook.com/scoopgaza" target="_blank" alt="Länk på facebook" class="button">
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.tiktok.com/@scoop.ps" target="_blank" alt="Länk på tiktok" class="button">
+                <div class="icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <span>TikTok</span>
+            </a>
+            <a href="https://www.instagram.com/scoop_oriental" target="_blank" alt="Länk på instagram" class="button">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <footer>
+            <p>&copy; 2024 Scoop. Alla rättigheter reserverade.</p>
+        </footer>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,871 @@
+body {
+  background-image: linear-gradient(to right, #34495e, #7a8794, #b0b0b0);
+  margin: 0 auto;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+}
+
+#menubar {
+  background-color: white;
+  border-bottom: 6px solid #008cba;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  opacity: 0.92;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  width: 470px;
+  height: 50px;
+  background: white;
+  border-radius: 8px;
+  font-size: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+nav a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+nav .ani {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: #008cba;
+  width: 100px;
+  transition: all 0.5s ease 0s;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+nav .start-hem,
+a:nth-child(1):hover ~ .ani {
+  width: 100px;
+  left: 0;
+}
+
+a:nth-child(2) {
+  width: 110px;
+}
+
+nav .start-meny,
+a:nth-child(2):hover ~ .ani {
+  width: 110px;
+  left: 100px;
+}
+
+a:nth-child(3) {
+  width: 100px;
+}
+
+nav .start-kontakt,
+a:nth-child(3):hover ~ .ani {
+  width: 100px;
+  left: 210px;
+}
+
+a:nth-child(4) {
+  width: 150px;
+}
+
+nav .start-om,
+a:nth-child(4):hover ~ .ani {
+  width: 150px;
+  left: 320px;
+}
+
+#menubar img {
+  margin-left: 40px;
+  display: flex;
+}
+
+#frambild1 {
+  background-image: url(./Bilder/frambild.PNG);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#btnk {
+  background-color: #008cba;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: cursive;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  border: 3px solid #008cba;
+}
+
+#btnk:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#kontakt {
+  background-color: #008cba;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: cursive;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  border: 3px solid #008cba;
+}
+
+#kontakt:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+#meny {
+  background-color: #008cba;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  margin: 5px 3px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: cursive;
+  border-radius: 12px;
+  background-color: #008cba;
+  color: white;
+  border: 3px solid #008cba;
+}
+
+#meny:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#btns {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: background-color 0.8s, color 0.8s;
+  justify-content: space-evenly;
+}
+
+.text-line {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+
+.text-line:before {
+  content: "  ";
+  height: 5px;
+  width: 34%;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 4px;
+}
+
+.text-line:after {
+  content: " ";
+  height: 5px;
+  width: 34%;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 4px;
+}
+
+#mainDel {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fleraBilder {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 60px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 300px;
+}
+
+.it1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.it2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.container0 {
+  position: relative;
+  width: 328px;
+  height: 100%;
+}
+
+.container0 img {
+  border-radius: 18px;
+  box-shadow: 6px 6px 9px black;
+  border: 5px solid white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 328px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  border: 4px solid white;
+  box-shadow: 5px 5px 8px black;
+  text-align:center;
+}
+
+.container0:hover .overlay {
+  opacity: 1;
+  border-radius: 18px;
+  outline: white;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.its {
+  border-radius: 20px;
+}
+
+.slidebilder {
+  max-width: 1100px;
+  width: 100%;
+  height: 500px;
+  border: 7px solid white;
+  border-radius: 8px;
+  box-shadow: 2px 6px 10px black;
+  overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.slidebild {
+  display: flex;
+  height: 100%;
+  width: 400%;
+  justify-content: space-between;
+}
+
+.slidebild {
+  animation: imgBox 45s linear infinite;
+}
+
+@keyframes imgBox {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+.slidebild:hover {
+  animation-play-state: paused;
+}
+
+.slidebild .sbild {
+  width: calc(100% - 100px);
+  height: 100%;
+}
+
+.slidebild img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#box {
+  text-align: center;
+}
+
+#box #div1 div,
+#box #div2 {
+  width: 48%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 9px grey;
+  border: 5px solid white;
+  background-color: #34495e;
+  transition: background-color 0.6s ease, outline 0.6s ease;
+}
+
+#box #div2 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#box #div1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#box img {
+  background-color: #008cba;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 12px;
+  outline: 2px solid white;
+}
+
+#box #div1 div:hover,
+#box #div2:hover {
+  outline: 8px solid #008cba;
+  background-color: #008cba;
+}
+
+.rubriktext1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1090px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px black;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.rubriktext2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1090px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 2px 5px 5px black;
+  border-radius: 10px 10px 0 0;
+  margin-top: 40px;
+}
+
+.rubriktext3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1090px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.line {
+  flex-grow: 1;
+  border-top: 14px solid #008cba;
+  margin: 0 30px;
+  border-radius: 50px;
+}
+
+.line {
+  transition: transform 0.3s ease-in-out;
+}
+
+.line2 {
+  flex-grow: 1;
+  border-top: 14px solid white;
+  margin: 0 30px;
+  border-radius: 50px;
+}
+
+.line2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rubriktext1:hover .line {
+  transform: scaleY(1.7);
+}
+
+.rubriktext2:hover .line {
+  transform: scaleY(1.7);
+}
+
+.rubriktext3:hover .line {
+  transform: scaleY(1.7);
+}
+
+.rubrikx {
+  color: black;
+}
+
+.rubrikx2 {
+  color: white;
+}
+
+
+/* Andra sidan meny */
+
+.container2 {
+  position: relative;
+  width: 310px;
+}
+
+.container2 img {
+  border-radius: 18px;
+  box-shadow: 6px 6px 9px black;
+  border: 8px solid #008cba;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  outline: white;
+  text-align:center;
+}
+
+.container2:hover .overlay2 {
+  opacity: 1;
+  border-radius: 18px;
+  outline: white;
+}
+
+.beskrivning {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.menyn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 8%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 6px 6px 9px black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 8px solid #008cba;
+}
+
+.bilder {
+  border: 4px solid #008cba;
+}
+
+
+/* Tredje kontakt */
+
+#oss {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.form-container {
+  width: 65%;
+  margin: 30px auto;
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px black;
+  border: 5px solid #008cba;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: none;
+}
+
+.input input,
+.input select {
+  width: 400px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.input label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border: 3px solid #2471a3;
+}
+
+input:focus ~ label,
+select:focus ~ label,
+input:valid ~ label,
+select:valid ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #34495e;
+}
+
+select {
+  padding: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#post {
+  width: 96.5%;
+}
+
+#mmm {
+  width: 96.5%;
+  height: 200px;
+}
+
+#skicka {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #2471a3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#skicka:hover {
+  background-color: #2a638a;
+}
+
+
+/* Sista sidan (om oss) */
+
+.papper {
+  position: relative;
+  width: 700px;
+  height: 500px;
+}
+
+.center {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.papper .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.papper .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: circle(0% at 0% 100%);
+  transition: all 0.7s;
+}
+
+#one:checked ~ .img-1 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#two:checked ~ .img-1 img,
+#two:checked ~ .img-2 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#three:checked ~ .img-1 img,
+#three:checked ~ .img-2 img,
+#three:checked ~ .img-3 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#four:checked ~ .img-1 img,
+#four:checked ~ .img-2 img,
+#four:checked ~ .img-3 img,
+#four:checked ~ .img-4 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#five:checked ~ .img-1 img,
+#five:checked ~ .img-2 img,
+#five:checked ~ .img-3 img,
+#five:checked ~ .img-4 img,
+#five:checked ~ .img-5 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+.papper .sliders {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  display: flex;
+}
+
+.papper .sliders label {
+  border: 2px solid #008cba;
+  width: 23px;
+  height: 23px;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two,
+#three:checked ~ .sliders label.three,
+#four:checked ~ .sliders label.four,
+#five:checked ~ .sliders label.five {
+  width: 65px;
+  border-radius: 18px;
+  background: #008cba;
+}
+
+.sliders label:hover {
+  background: #008cba;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.reviews {
+  background-color: #2471a3;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#recensioner {
+  background-color: white;
+  width: 100%;
+  max-width: 1090px;
+  padding: 20px;
+  box-shadow: 2px 5px 5px black;
+  border-radius: 0 0 10px 10px;
+}
+
+#con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+  font-size: 150%;
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px black;
+}
+
+video {
+  border-radius: 15px;
+  outline: 7px solid #008cba;
+}
+
+
+/* Del för sista ned i alla sidor */
+
+#sista {
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-bottom: 10px solid #2471a3;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.socialaicon {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.socialaicon .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px gainsboro;
+  transition: all 0.3s ease-out;
+}
+
+.socialaicon .button:hover {
+  width: 200px;
+}
+
+.socialaicon .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.socialaicon .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+
+.socialaicon .button:nth-child(2):hover .icon {
+  background: black;
+}
+
+.socialaicon .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.socialaicon .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.socialaicon .button:hover .icon i {
+  color: white;
+}
+
+.socialaicon .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.socialaicon .button:nth-child(1) span {
+  color: #4267b2;
+}
+
+.socialaicon .button:nth-child(2) span {
+  color: black;
+}
+
+.socialaicon .button:nth-child(3) span {
+  color: #e1306c;
+}
